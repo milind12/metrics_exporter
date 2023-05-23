@@ -1,0 +1,3183 @@
+{
+    "status": "success",
+    "data": {
+        "example_app_http_request_duration_seconds": [
+            {
+                "type": "histogram",
+                "help": "Time taken to serve HTTP requests.",
+                "unit": ""
+            }
+        ],
+        "example_app_http_request_size_bytes": [
+            {
+                "type": "histogram",
+                "help": "Size of HTTP requests.",
+                "unit": ""
+            }
+        ],
+        "example_app_http_requests_total": [
+            {
+                "type": "counter",
+                "help": "This metric tracks the total number of requests made to the server over a period of time. It can help us identify trends and spikes in traffic.",
+                "unit": ""
+            }
+        ],
+        "example_app_http_response_size_bytes": [
+            {
+                "type": "histogram",
+                "help": "Size of HTTP responses.",
+                "unit": ""
+            }
+        ],
+        "go_gc_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "A summary of the pause duration of garbage collection cycles.",
+                "unit": ""
+            }
+        ],
+        "go_goroutines": [
+            {
+                "type": "gauge",
+                "help": "Number of goroutines that currently exist.",
+                "unit": ""
+            }
+        ],
+        "go_info": [
+            {
+                "type": "gauge",
+                "help": "Information about the Go environment.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_alloc_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes allocated and still in use.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_alloc_bytes_total": [
+            {
+                "type": "counter",
+                "help": "Total number of bytes allocated, even if freed.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_buck_hash_sys_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes used by the profiling bucket hash table.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_frees_total": [
+            {
+                "type": "counter",
+                "help": "Total number of frees.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_gc_cpu_fraction": [
+            {
+                "type": "gauge",
+                "help": "The fraction of this program's available CPU time used by the GC since the program started.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_gc_sys_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes used for garbage collection system metadata.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_heap_alloc_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of heap bytes allocated and still in use.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_heap_idle_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of heap bytes waiting to be used.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_heap_inuse_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of heap bytes that are in use.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_heap_objects": [
+            {
+                "type": "gauge",
+                "help": "Number of allocated objects.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_heap_released_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of heap bytes released to OS.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_heap_sys_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of heap bytes obtained from system.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_last_gc_time_seconds": [
+            {
+                "type": "gauge",
+                "help": "Number of seconds since 1970 of last garbage collection.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_lookups_total": [
+            {
+                "type": "counter",
+                "help": "Total number of pointer lookups.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_mallocs_total": [
+            {
+                "type": "counter",
+                "help": "Total number of mallocs.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_mcache_inuse_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes in use by mcache structures.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_mcache_sys_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes used for mcache structures obtained from system.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_mspan_inuse_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes in use by mspan structures.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_mspan_sys_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes used for mspan structures obtained from system.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_next_gc_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of heap bytes when next garbage collection will take place.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_other_sys_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes used for other system allocations.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_stack_inuse_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes in use by the stack allocator.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_stack_sys_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes obtained from system for stack allocator.",
+                "unit": ""
+            }
+        ],
+        "go_memstats_sys_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of bytes obtained from system.",
+                "unit": ""
+            }
+        ],
+        "go_threads": [
+            {
+                "type": "gauge",
+                "help": "Number of OS threads created.",
+                "unit": ""
+            }
+        ],
+        "net_conntrack_dialer_conn_attempted_total": [
+            {
+                "type": "counter",
+                "help": "Total number of connections attempted by the given dialer a given name.",
+                "unit": ""
+            }
+        ],
+        "net_conntrack_dialer_conn_closed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of connections closed which originated from the dialer of a given name.",
+                "unit": ""
+            }
+        ],
+        "net_conntrack_dialer_conn_established_total": [
+            {
+                "type": "counter",
+                "help": "Total number of connections successfully established by the given dialer a given name.",
+                "unit": ""
+            }
+        ],
+        "net_conntrack_dialer_conn_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of connections failed to dial by the dialer a given name.",
+                "unit": ""
+            }
+        ],
+        "net_conntrack_listener_conn_accepted_total": [
+            {
+                "type": "counter",
+                "help": "Total number of connections opened to the listener of a given name.",
+                "unit": ""
+            }
+        ],
+        "net_conntrack_listener_conn_closed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of connections closed that were made to the listener of a given name.",
+                "unit": ""
+            }
+        ],
+        "node_arp_entries": [
+            {
+                "type": "gauge",
+                "help": "ARP entries by device",
+                "unit": ""
+            }
+        ],
+        "node_boot_time_seconds": [
+            {
+                "type": "gauge",
+                "help": "Node boot time, in unixtime.",
+                "unit": ""
+            }
+        ],
+        "node_context_switches_total": [
+            {
+                "type": "counter",
+                "help": "Total number of context switches.",
+                "unit": ""
+            }
+        ],
+        "node_cooling_device_cur_state": [
+            {
+                "type": "gauge",
+                "help": "Current throttle state of the cooling device",
+                "unit": ""
+            }
+        ],
+        "node_cooling_device_max_state": [
+            {
+                "type": "gauge",
+                "help": "Maximum throttle state of the cooling device",
+                "unit": ""
+            }
+        ],
+        "node_cpu_core_throttles_total": [
+            {
+                "type": "counter",
+                "help": "Number of times this CPU core has been throttled.",
+                "unit": ""
+            }
+        ],
+        "node_cpu_frequency_max_hertz": [
+            {
+                "type": "gauge",
+                "help": "Maximum cpu thread frequency in hertz.",
+                "unit": ""
+            }
+        ],
+        "node_cpu_frequency_min_hertz": [
+            {
+                "type": "gauge",
+                "help": "Minimum cpu thread frequency in hertz.",
+                "unit": ""
+            }
+        ],
+        "node_cpu_guest_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Seconds the CPUs spent in guests (VMs) for each mode.",
+                "unit": ""
+            }
+        ],
+        "node_cpu_package_throttles_total": [
+            {
+                "type": "counter",
+                "help": "Number of times this CPU package has been throttled.",
+                "unit": ""
+            }
+        ],
+        "node_cpu_scaling_frequency_hertz": [
+            {
+                "type": "gauge",
+                "help": "Current scaled CPU thread frequency in hertz.",
+                "unit": ""
+            }
+        ],
+        "node_cpu_scaling_frequency_max_hertz": [
+            {
+                "type": "gauge",
+                "help": "Maximum scaled CPU thread frequency in hertz.",
+                "unit": ""
+            }
+        ],
+        "node_cpu_scaling_frequency_min_hertz": [
+            {
+                "type": "gauge",
+                "help": "Minimum scaled CPU thread frequency in hertz.",
+                "unit": ""
+            }
+        ],
+        "node_cpu_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Seconds the CPUs spent in each mode.",
+                "unit": ""
+            }
+        ],
+        "node_disk_discard_time_seconds_total": [
+            {
+                "type": "counter",
+                "help": "This is the total number of seconds spent by all discards.",
+                "unit": ""
+            }
+        ],
+        "node_disk_discarded_sectors_total": [
+            {
+                "type": "counter",
+                "help": "The total number of sectors discarded successfully.",
+                "unit": ""
+            }
+        ],
+        "node_disk_discards_completed_total": [
+            {
+                "type": "counter",
+                "help": "The total number of discards completed successfully.",
+                "unit": ""
+            }
+        ],
+        "node_disk_discards_merged_total": [
+            {
+                "type": "counter",
+                "help": "The total number of discards merged.",
+                "unit": ""
+            }
+        ],
+        "node_disk_flush_requests_time_seconds_total": [
+            {
+                "type": "counter",
+                "help": "This is the total number of seconds spent by all flush requests.",
+                "unit": ""
+            }
+        ],
+        "node_disk_flush_requests_total": [
+            {
+                "type": "counter",
+                "help": "The total number of flush requests completed successfully",
+                "unit": ""
+            }
+        ],
+        "node_disk_info": [
+            {
+                "type": "gauge",
+                "help": "Info of /sys/block/<block_device>.",
+                "unit": ""
+            }
+        ],
+        "node_disk_io_now": [
+            {
+                "type": "gauge",
+                "help": "The number of I/Os currently in progress.",
+                "unit": ""
+            }
+        ],
+        "node_disk_io_time_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Total seconds spent doing I/Os.",
+                "unit": ""
+            }
+        ],
+        "node_disk_io_time_weighted_seconds_total": [
+            {
+                "type": "counter",
+                "help": "The weighted # of seconds spent doing I/Os.",
+                "unit": ""
+            }
+        ],
+        "node_disk_read_bytes_total": [
+            {
+                "type": "counter",
+                "help": "The total number of bytes read successfully.",
+                "unit": ""
+            }
+        ],
+        "node_disk_read_time_seconds_total": [
+            {
+                "type": "counter",
+                "help": "The total number of seconds spent by all reads.",
+                "unit": ""
+            }
+        ],
+        "node_disk_reads_completed_total": [
+            {
+                "type": "counter",
+                "help": "The total number of reads completed successfully.",
+                "unit": ""
+            }
+        ],
+        "node_disk_reads_merged_total": [
+            {
+                "type": "counter",
+                "help": "The total number of reads merged.",
+                "unit": ""
+            }
+        ],
+        "node_disk_write_time_seconds_total": [
+            {
+                "type": "counter",
+                "help": "This is the total number of seconds spent by all writes.",
+                "unit": ""
+            }
+        ],
+        "node_disk_writes_completed_total": [
+            {
+                "type": "counter",
+                "help": "The total number of writes completed successfully.",
+                "unit": ""
+            }
+        ],
+        "node_disk_writes_merged_total": [
+            {
+                "type": "counter",
+                "help": "The number of writes merged.",
+                "unit": ""
+            }
+        ],
+        "node_disk_written_bytes_total": [
+            {
+                "type": "counter",
+                "help": "The total number of bytes written successfully.",
+                "unit": ""
+            }
+        ],
+        "node_dmi_info": [
+            {
+                "type": "gauge",
+                "help": "A metric with a constant '1' value labeled by bios_date, bios_release, bios_vendor, bios_version, board_asset_tag, board_name, board_serial, board_vendor, board_version, chassis_asset_tag, chassis_serial, chassis_vendor, chassis_version, product_family, product_name, product_serial, product_sku, product_uuid, product_version, system_vendor if provided by DMI.",
+                "unit": ""
+            }
+        ],
+        "node_entropy_available_bits": [
+            {
+                "type": "gauge",
+                "help": "Bits of available entropy.",
+                "unit": ""
+            }
+        ],
+        "node_entropy_pool_size_bits": [
+            {
+                "type": "gauge",
+                "help": "Bits of entropy pool.",
+                "unit": ""
+            }
+        ],
+        "node_exporter_build_info": [
+            {
+                "type": "gauge",
+                "help": "A metric with a constant '1' value labeled by version, revision, branch, and goversion from which node_exporter was built.",
+                "unit": ""
+            }
+        ],
+        "node_filefd_allocated": [
+            {
+                "type": "gauge",
+                "help": "File descriptor statistics: allocated.",
+                "unit": ""
+            }
+        ],
+        "node_filefd_maximum": [
+            {
+                "type": "gauge",
+                "help": "File descriptor statistics: maximum.",
+                "unit": ""
+            }
+        ],
+        "node_filesystem_avail_bytes": [
+            {
+                "type": "gauge",
+                "help": "Filesystem space available to non-root users in bytes.",
+                "unit": ""
+            }
+        ],
+        "node_filesystem_device_error": [
+            {
+                "type": "gauge",
+                "help": "Whether an error occurred while getting statistics for the given device.",
+                "unit": ""
+            }
+        ],
+        "node_filesystem_files": [
+            {
+                "type": "gauge",
+                "help": "Filesystem total file nodes.",
+                "unit": ""
+            }
+        ],
+        "node_filesystem_files_free": [
+            {
+                "type": "gauge",
+                "help": "Filesystem total free file nodes.",
+                "unit": ""
+            }
+        ],
+        "node_filesystem_free_bytes": [
+            {
+                "type": "gauge",
+                "help": "Filesystem free space in bytes.",
+                "unit": ""
+            }
+        ],
+        "node_filesystem_readonly": [
+            {
+                "type": "gauge",
+                "help": "Filesystem read-only status.",
+                "unit": ""
+            }
+        ],
+        "node_filesystem_size_bytes": [
+            {
+                "type": "gauge",
+                "help": "Filesystem size in bytes.",
+                "unit": ""
+            }
+        ],
+        "node_forks_total": [
+            {
+                "type": "counter",
+                "help": "Total number of forks.",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_chip_names": [
+            {
+                "type": "gauge",
+                "help": "Annotation metric for human-readable chip names",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_curr_amps": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for current (input)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_curr_max_amps": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for current (max)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_fan_rpm": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for fan revolutions per minute (input)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_in_max_volts": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for voltage (max)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_in_min_volts": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for voltage (min)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_in_volts": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for voltage (input)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_pwm": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor pwm element ",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_pwm_enable": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor pwm element enable",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_sensor_label": [
+            {
+                "type": "gauge",
+                "help": "Label for given chip and sensor",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_temp_alarm": [
+            {
+                "type": "gauge",
+                "help": "Hardware sensor alarm status (temp)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_temp_celsius": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for temperature (input)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_temp_crit_alarm_celsius": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for temperature (crit_alarm)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_temp_crit_celsius": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for temperature (crit)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_temp_max_celsius": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for temperature (max)",
+                "unit": ""
+            }
+        ],
+        "node_hwmon_temp_min_celsius": [
+            {
+                "type": "gauge",
+                "help": "Hardware monitor for temperature (min)",
+                "unit": ""
+            }
+        ],
+        "node_intr_total": [
+            {
+                "type": "counter",
+                "help": "Total number of interrupts serviced.",
+                "unit": ""
+            }
+        ],
+        "node_load1": [
+            {
+                "type": "gauge",
+                "help": "1m load average.",
+                "unit": ""
+            }
+        ],
+        "node_load15": [
+            {
+                "type": "gauge",
+                "help": "15m load average.",
+                "unit": ""
+            }
+        ],
+        "node_load5": [
+            {
+                "type": "gauge",
+                "help": "5m load average.",
+                "unit": ""
+            }
+        ],
+        "node_logind_sessions": [
+            {
+                "type": "gauge",
+                "help": "Number of sessions registered in logind.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Active_anon_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Active_anon_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Active_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Active_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Active_file_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Active_file_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_AnonHugePages_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field AnonHugePages_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_AnonPages_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field AnonPages_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Bounce_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Bounce_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Buffers_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Buffers_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Cached_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Cached_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_CommitLimit_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field CommitLimit_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Committed_AS_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Committed_AS_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_DirectMap1G_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field DirectMap1G_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_DirectMap2M_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field DirectMap2M_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_DirectMap4k_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field DirectMap4k_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Dirty_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Dirty_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_FileHugePages_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field FileHugePages_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_FilePmdMapped_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field FilePmdMapped_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_HardwareCorrupted_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field HardwareCorrupted_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_HugePages_Free": [
+            {
+                "type": "gauge",
+                "help": "Memory information field HugePages_Free.",
+                "unit": ""
+            }
+        ],
+        "node_memory_HugePages_Rsvd": [
+            {
+                "type": "gauge",
+                "help": "Memory information field HugePages_Rsvd.",
+                "unit": ""
+            }
+        ],
+        "node_memory_HugePages_Surp": [
+            {
+                "type": "gauge",
+                "help": "Memory information field HugePages_Surp.",
+                "unit": ""
+            }
+        ],
+        "node_memory_HugePages_Total": [
+            {
+                "type": "gauge",
+                "help": "Memory information field HugePages_Total.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Hugepagesize_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Hugepagesize_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Hugetlb_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Hugetlb_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Inactive_anon_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Inactive_anon_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Inactive_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Inactive_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Inactive_file_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Inactive_file_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_KReclaimable_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field KReclaimable_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_KernelStack_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field KernelStack_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Mapped_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Mapped_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_MemAvailable_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field MemAvailable_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_MemFree_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field MemFree_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_MemTotal_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field MemTotal_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Mlocked_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Mlocked_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_NFS_Unstable_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field NFS_Unstable_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_PageTables_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field PageTables_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Percpu_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Percpu_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_SReclaimable_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field SReclaimable_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_SUnreclaim_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field SUnreclaim_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_ShmemHugePages_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field ShmemHugePages_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_ShmemPmdMapped_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field ShmemPmdMapped_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Shmem_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Shmem_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Slab_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Slab_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_SwapCached_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field SwapCached_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_SwapFree_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field SwapFree_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_SwapTotal_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field SwapTotal_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Unevictable_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Unevictable_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_VmallocChunk_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field VmallocChunk_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_VmallocTotal_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field VmallocTotal_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_VmallocUsed_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field VmallocUsed_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_WritebackTmp_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field WritebackTmp_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_memory_Writeback_bytes": [
+            {
+                "type": "gauge",
+                "help": "Memory information field Writeback_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Icmp6_InErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic Icmp6InErrors.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Icmp6_InMsgs": [
+            {
+                "type": "unknown",
+                "help": "Statistic Icmp6InMsgs.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Icmp6_OutMsgs": [
+            {
+                "type": "unknown",
+                "help": "Statistic Icmp6OutMsgs.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Icmp_InErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic IcmpInErrors.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Icmp_InMsgs": [
+            {
+                "type": "unknown",
+                "help": "Statistic IcmpInMsgs.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Icmp_OutMsgs": [
+            {
+                "type": "unknown",
+                "help": "Statistic IcmpOutMsgs.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Ip6_InOctets": [
+            {
+                "type": "unknown",
+                "help": "Statistic Ip6InOctets.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Ip6_OutOctets": [
+            {
+                "type": "unknown",
+                "help": "Statistic Ip6OutOctets.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_IpExt_InOctets": [
+            {
+                "type": "unknown",
+                "help": "Statistic IpExtInOctets.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_IpExt_OutOctets": [
+            {
+                "type": "unknown",
+                "help": "Statistic IpExtOutOctets.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Ip_Forwarding": [
+            {
+                "type": "unknown",
+                "help": "Statistic IpForwarding.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_TcpExt_ListenDrops": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpExtListenDrops.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_TcpExt_ListenOverflows": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpExtListenOverflows.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_TcpExt_SyncookiesFailed": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpExtSyncookiesFailed.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_TcpExt_SyncookiesRecv": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpExtSyncookiesRecv.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_TcpExt_SyncookiesSent": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpExtSyncookiesSent.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_TcpExt_TCPSynRetrans": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpExtTCPSynRetrans.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_TcpExt_TCPTimeouts": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpExtTCPTimeouts.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Tcp_ActiveOpens": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpActiveOpens.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Tcp_CurrEstab": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpCurrEstab.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Tcp_InErrs": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpInErrs.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Tcp_InSegs": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpInSegs.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Tcp_OutRsts": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpOutRsts.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Tcp_OutSegs": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpOutSegs.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Tcp_PassiveOpens": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpPassiveOpens.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Tcp_RetransSegs": [
+            {
+                "type": "unknown",
+                "help": "Statistic TcpRetransSegs.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp6_InDatagrams": [
+            {
+                "type": "unknown",
+                "help": "Statistic Udp6InDatagrams.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp6_InErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic Udp6InErrors.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp6_NoPorts": [
+            {
+                "type": "unknown",
+                "help": "Statistic Udp6NoPorts.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp6_OutDatagrams": [
+            {
+                "type": "unknown",
+                "help": "Statistic Udp6OutDatagrams.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp6_RcvbufErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic Udp6RcvbufErrors.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp6_SndbufErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic Udp6SndbufErrors.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_UdpLite6_InErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic UdpLite6InErrors.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_UdpLite_InErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic UdpLiteInErrors.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp_InDatagrams": [
+            {
+                "type": "unknown",
+                "help": "Statistic UdpInDatagrams.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp_InErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic UdpInErrors.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp_NoPorts": [
+            {
+                "type": "unknown",
+                "help": "Statistic UdpNoPorts.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp_OutDatagrams": [
+            {
+                "type": "unknown",
+                "help": "Statistic UdpOutDatagrams.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp_RcvbufErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic UdpRcvbufErrors.",
+                "unit": ""
+            }
+        ],
+        "node_netstat_Udp_SndbufErrors": [
+            {
+                "type": "unknown",
+                "help": "Statistic UdpSndbufErrors.",
+                "unit": ""
+            }
+        ],
+        "node_network_address_assign_type": [
+            {
+                "type": "gauge",
+                "help": "address_assign_type value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_carrier": [
+            {
+                "type": "gauge",
+                "help": "carrier value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_carrier_changes_total": [
+            {
+                "type": "counter",
+                "help": "carrier_changes_total value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_carrier_down_changes_total": [
+            {
+                "type": "counter",
+                "help": "carrier_down_changes_total value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_carrier_up_changes_total": [
+            {
+                "type": "counter",
+                "help": "carrier_up_changes_total value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_device_id": [
+            {
+                "type": "gauge",
+                "help": "device_id value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_dormant": [
+            {
+                "type": "gauge",
+                "help": "dormant value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_flags": [
+            {
+                "type": "gauge",
+                "help": "flags value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_iface_id": [
+            {
+                "type": "gauge",
+                "help": "iface_id value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_iface_link": [
+            {
+                "type": "gauge",
+                "help": "iface_link value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_iface_link_mode": [
+            {
+                "type": "gauge",
+                "help": "iface_link_mode value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_info": [
+            {
+                "type": "gauge",
+                "help": "Non-numeric data from /sys/class/net/<iface>, value is always 1.",
+                "unit": ""
+            }
+        ],
+        "node_network_mtu_bytes": [
+            {
+                "type": "gauge",
+                "help": "mtu_bytes value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_name_assign_type": [
+            {
+                "type": "gauge",
+                "help": "name_assign_type value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_net_dev_group": [
+            {
+                "type": "gauge",
+                "help": "net_dev_group value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_protocol_type": [
+            {
+                "type": "gauge",
+                "help": "protocol_type value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_receive_bytes_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic receive_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_network_receive_compressed_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic receive_compressed.",
+                "unit": ""
+            }
+        ],
+        "node_network_receive_drop_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic receive_drop.",
+                "unit": ""
+            }
+        ],
+        "node_network_receive_errs_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic receive_errs.",
+                "unit": ""
+            }
+        ],
+        "node_network_receive_fifo_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic receive_fifo.",
+                "unit": ""
+            }
+        ],
+        "node_network_receive_frame_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic receive_frame.",
+                "unit": ""
+            }
+        ],
+        "node_network_receive_multicast_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic receive_multicast.",
+                "unit": ""
+            }
+        ],
+        "node_network_receive_packets_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic receive_packets.",
+                "unit": ""
+            }
+        ],
+        "node_network_speed_bytes": [
+            {
+                "type": "gauge",
+                "help": "speed_bytes value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_transmit_bytes_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic transmit_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_network_transmit_carrier_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic transmit_carrier.",
+                "unit": ""
+            }
+        ],
+        "node_network_transmit_colls_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic transmit_colls.",
+                "unit": ""
+            }
+        ],
+        "node_network_transmit_compressed_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic transmit_compressed.",
+                "unit": ""
+            }
+        ],
+        "node_network_transmit_drop_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic transmit_drop.",
+                "unit": ""
+            }
+        ],
+        "node_network_transmit_errs_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic transmit_errs.",
+                "unit": ""
+            }
+        ],
+        "node_network_transmit_fifo_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic transmit_fifo.",
+                "unit": ""
+            }
+        ],
+        "node_network_transmit_packets_total": [
+            {
+                "type": "counter",
+                "help": "Network device statistic transmit_packets.",
+                "unit": ""
+            }
+        ],
+        "node_network_transmit_queue_length": [
+            {
+                "type": "gauge",
+                "help": "transmit_queue_length value of /sys/class/net/<iface>.",
+                "unit": ""
+            }
+        ],
+        "node_network_up": [
+            {
+                "type": "gauge",
+                "help": "Value is 1 if operstate is 'up', 0 otherwise.",
+                "unit": ""
+            }
+        ],
+        "node_nf_conntrack_entries": [
+            {
+                "type": "gauge",
+                "help": "Number of currently allocated flow entries for connection tracking.",
+                "unit": ""
+            }
+        ],
+        "node_nf_conntrack_entries_limit": [
+            {
+                "type": "gauge",
+                "help": "Maximum size of connection tracking table.",
+                "unit": ""
+            }
+        ],
+        "node_nvme_info": [
+            {
+                "type": "gauge",
+                "help": "Non-numeric data from /sys/class/nvme/<device>, value is always 1.",
+                "unit": ""
+            }
+        ],
+        "node_os_info": [
+            {
+                "type": "gauge",
+                "help": "A metric with a constant '1' value labeled by build_id, id, id_like, image_id, image_version, name, pretty_name, variant, variant_id, version, version_codename, version_id.",
+                "unit": ""
+            }
+        ],
+        "node_os_version": [
+            {
+                "type": "gauge",
+                "help": "Metric containing the major.minor part of the OS version.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_capacity": [
+            {
+                "type": "gauge",
+                "help": "capacity value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_current_ampere": [
+            {
+                "type": "gauge",
+                "help": "current_ampere value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_current_max": [
+            {
+                "type": "gauge",
+                "help": "current_max value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_cyclecount": [
+            {
+                "type": "gauge",
+                "help": "cyclecount value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_energy_full": [
+            {
+                "type": "gauge",
+                "help": "energy_full value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_energy_full_design": [
+            {
+                "type": "gauge",
+                "help": "energy_full_design value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_energy_watthour": [
+            {
+                "type": "gauge",
+                "help": "energy_watthour value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_info": [
+            {
+                "type": "gauge",
+                "help": "info of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_online": [
+            {
+                "type": "gauge",
+                "help": "online value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_power_watt": [
+            {
+                "type": "gauge",
+                "help": "power_watt value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_present": [
+            {
+                "type": "gauge",
+                "help": "present value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_voltage_max": [
+            {
+                "type": "gauge",
+                "help": "voltage_max value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_voltage_min": [
+            {
+                "type": "gauge",
+                "help": "voltage_min value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_voltage_min_design": [
+            {
+                "type": "gauge",
+                "help": "voltage_min_design value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_power_supply_voltage_volt": [
+            {
+                "type": "gauge",
+                "help": "voltage_volt value of /sys/class/power_supply/<power_supply>.",
+                "unit": ""
+            }
+        ],
+        "node_pressure_cpu_waiting_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Total time in seconds that processes have waited for CPU time",
+                "unit": ""
+            }
+        ],
+        "node_pressure_io_stalled_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Total time in seconds no process could make progress due to IO congestion",
+                "unit": ""
+            }
+        ],
+        "node_pressure_io_waiting_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Total time in seconds that processes have waited due to IO congestion",
+                "unit": ""
+            }
+        ],
+        "node_pressure_memory_stalled_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Total time in seconds no process could make progress due to memory congestion",
+                "unit": ""
+            }
+        ],
+        "node_pressure_memory_waiting_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Total time in seconds that processes have waited for memory",
+                "unit": ""
+            }
+        ],
+        "node_procs_blocked": [
+            {
+                "type": "gauge",
+                "help": "Number of processes blocked waiting for I/O to complete.",
+                "unit": ""
+            }
+        ],
+        "node_procs_running": [
+            {
+                "type": "gauge",
+                "help": "Number of processes in runnable state.",
+                "unit": ""
+            }
+        ],
+        "node_schedstat_running_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Number of seconds CPU spent running a process.",
+                "unit": ""
+            }
+        ],
+        "node_schedstat_timeslices_total": [
+            {
+                "type": "counter",
+                "help": "Number of timeslices executed by CPU.",
+                "unit": ""
+            }
+        ],
+        "node_schedstat_waiting_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Number of seconds spent by processing waiting for this CPU.",
+                "unit": ""
+            }
+        ],
+        "node_scrape_collector_duration_seconds": [
+            {
+                "type": "gauge",
+                "help": "node_exporter: Duration of a collector scrape.",
+                "unit": ""
+            }
+        ],
+        "node_scrape_collector_success": [
+            {
+                "type": "gauge",
+                "help": "node_exporter: Whether a collector succeeded.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_FRAG6_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of FRAG6 sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_FRAG6_memory": [
+            {
+                "type": "gauge",
+                "help": "Number of FRAG6 sockets in state memory.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_FRAG_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of FRAG sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_FRAG_memory": [
+            {
+                "type": "gauge",
+                "help": "Number of FRAG sockets in state memory.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_RAW6_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of RAW6 sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_RAW_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of RAW sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_TCP6_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of TCP6 sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_TCP_alloc": [
+            {
+                "type": "gauge",
+                "help": "Number of TCP sockets in state alloc.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_TCP_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of TCP sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_TCP_mem": [
+            {
+                "type": "gauge",
+                "help": "Number of TCP sockets in state mem.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_TCP_mem_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of TCP sockets in state mem_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_TCP_orphan": [
+            {
+                "type": "gauge",
+                "help": "Number of TCP sockets in state orphan.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_TCP_tw": [
+            {
+                "type": "gauge",
+                "help": "Number of TCP sockets in state tw.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_UDP6_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of UDP6 sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_UDPLITE6_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of UDPLITE6 sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_UDPLITE_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of UDPLITE sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_UDP_inuse": [
+            {
+                "type": "gauge",
+                "help": "Number of UDP sockets in state inuse.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_UDP_mem": [
+            {
+                "type": "gauge",
+                "help": "Number of UDP sockets in state mem.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_UDP_mem_bytes": [
+            {
+                "type": "gauge",
+                "help": "Number of UDP sockets in state mem_bytes.",
+                "unit": ""
+            }
+        ],
+        "node_sockstat_sockets_used": [
+            {
+                "type": "gauge",
+                "help": "Number of IPv4 sockets in use.",
+                "unit": ""
+            }
+        ],
+        "node_softnet_dropped_total": [
+            {
+                "type": "counter",
+                "help": "Number of dropped packets",
+                "unit": ""
+            }
+        ],
+        "node_softnet_processed_total": [
+            {
+                "type": "counter",
+                "help": "Number of processed packets",
+                "unit": ""
+            }
+        ],
+        "node_softnet_times_squeezed_total": [
+            {
+                "type": "counter",
+                "help": "Number of times processing packets ran out of quota",
+                "unit": ""
+            }
+        ],
+        "node_textfile_scrape_error": [
+            {
+                "type": "gauge",
+                "help": "1 if there was an error opening or reading a file, 0 otherwise",
+                "unit": ""
+            }
+        ],
+        "node_thermal_zone_temp": [
+            {
+                "type": "gauge",
+                "help": "Zone temperature in Celsius",
+                "unit": ""
+            }
+        ],
+        "node_time_clocksource_available_info": [
+            {
+                "type": "gauge",
+                "help": "Available clocksources read from '/sys/devices/system/clocksource'.",
+                "unit": ""
+            }
+        ],
+        "node_time_clocksource_current_info": [
+            {
+                "type": "gauge",
+                "help": "Current clocksource read from '/sys/devices/system/clocksource'.",
+                "unit": ""
+            }
+        ],
+        "node_time_seconds": [
+            {
+                "type": "gauge",
+                "help": "System time in seconds since epoch (1970).",
+                "unit": ""
+            }
+        ],
+        "node_time_zone_offset_seconds": [
+            {
+                "type": "gauge",
+                "help": "System time zone offset in seconds.",
+                "unit": ""
+            }
+        ],
+        "node_timex_estimated_error_seconds": [
+            {
+                "type": "gauge",
+                "help": "Estimated error in seconds.",
+                "unit": ""
+            }
+        ],
+        "node_timex_frequency_adjustment_ratio": [
+            {
+                "type": "gauge",
+                "help": "Local clock frequency adjustment.",
+                "unit": ""
+            }
+        ],
+        "node_timex_loop_time_constant": [
+            {
+                "type": "gauge",
+                "help": "Phase-locked loop time constant.",
+                "unit": ""
+            }
+        ],
+        "node_timex_maxerror_seconds": [
+            {
+                "type": "gauge",
+                "help": "Maximum error in seconds.",
+                "unit": ""
+            }
+        ],
+        "node_timex_offset_seconds": [
+            {
+                "type": "gauge",
+                "help": "Time offset in between local system and reference clock.",
+                "unit": ""
+            }
+        ],
+        "node_timex_pps_calibration_total": [
+            {
+                "type": "counter",
+                "help": "Pulse per second count of calibration intervals.",
+                "unit": ""
+            }
+        ],
+        "node_timex_pps_error_total": [
+            {
+                "type": "counter",
+                "help": "Pulse per second count of calibration errors.",
+                "unit": ""
+            }
+        ],
+        "node_timex_pps_frequency_hertz": [
+            {
+                "type": "gauge",
+                "help": "Pulse per second frequency.",
+                "unit": ""
+            }
+        ],
+        "node_timex_pps_jitter_seconds": [
+            {
+                "type": "gauge",
+                "help": "Pulse per second jitter.",
+                "unit": ""
+            }
+        ],
+        "node_timex_pps_jitter_total": [
+            {
+                "type": "counter",
+                "help": "Pulse per second count of jitter limit exceeded events.",
+                "unit": ""
+            }
+        ],
+        "node_timex_pps_shift_seconds": [
+            {
+                "type": "gauge",
+                "help": "Pulse per second interval duration.",
+                "unit": ""
+            }
+        ],
+        "node_timex_pps_stability_exceeded_total": [
+            {
+                "type": "counter",
+                "help": "Pulse per second count of stability limit exceeded events.",
+                "unit": ""
+            }
+        ],
+        "node_timex_pps_stability_hertz": [
+            {
+                "type": "gauge",
+                "help": "Pulse per second stability, average of recent frequency changes.",
+                "unit": ""
+            }
+        ],
+        "node_timex_status": [
+            {
+                "type": "gauge",
+                "help": "Value of the status array bits.",
+                "unit": ""
+            }
+        ],
+        "node_timex_sync_status": [
+            {
+                "type": "gauge",
+                "help": "Is clock synchronized to a reliable server (1 = yes, 0 = no).",
+                "unit": ""
+            }
+        ],
+        "node_timex_tai_offset_seconds": [
+            {
+                "type": "gauge",
+                "help": "International Atomic Time (TAI) offset.",
+                "unit": ""
+            }
+        ],
+        "node_timex_tick_seconds": [
+            {
+                "type": "gauge",
+                "help": "Seconds between clock ticks.",
+                "unit": ""
+            }
+        ],
+        "node_udp_queues": [
+            {
+                "type": "gauge",
+                "help": "Number of allocated memory in the kernel for UDP datagrams in bytes.",
+                "unit": ""
+            }
+        ],
+        "node_uname_info": [
+            {
+                "type": "gauge",
+                "help": "Labeled system information as provided by the uname system call.",
+                "unit": ""
+            }
+        ],
+        "node_vmstat_oom_kill": [
+            {
+                "type": "unknown",
+                "help": "/proc/vmstat information field oom_kill.",
+                "unit": ""
+            }
+        ],
+        "node_vmstat_pgfault": [
+            {
+                "type": "unknown",
+                "help": "/proc/vmstat information field pgfault.",
+                "unit": ""
+            }
+        ],
+        "node_vmstat_pgmajfault": [
+            {
+                "type": "unknown",
+                "help": "/proc/vmstat information field pgmajfault.",
+                "unit": ""
+            }
+        ],
+        "node_vmstat_pgpgin": [
+            {
+                "type": "unknown",
+                "help": "/proc/vmstat information field pgpgin.",
+                "unit": ""
+            }
+        ],
+        "node_vmstat_pgpgout": [
+            {
+                "type": "unknown",
+                "help": "/proc/vmstat information field pgpgout.",
+                "unit": ""
+            }
+        ],
+        "node_vmstat_pswpin": [
+            {
+                "type": "unknown",
+                "help": "/proc/vmstat information field pswpin.",
+                "unit": ""
+            }
+        ],
+        "node_vmstat_pswpout": [
+            {
+                "type": "unknown",
+                "help": "/proc/vmstat information field pswpout.",
+                "unit": ""
+            }
+        ],
+        "process_cpu_seconds_total": [
+            {
+                "type": "counter",
+                "help": "Total user and system CPU time spent in seconds.",
+                "unit": ""
+            }
+        ],
+        "process_max_fds": [
+            {
+                "type": "gauge",
+                "help": "Maximum number of open file descriptors.",
+                "unit": ""
+            }
+        ],
+        "process_open_fds": [
+            {
+                "type": "gauge",
+                "help": "Number of open file descriptors.",
+                "unit": ""
+            }
+        ],
+        "process_resident_memory_bytes": [
+            {
+                "type": "gauge",
+                "help": "Resident memory size in bytes.",
+                "unit": ""
+            }
+        ],
+        "process_start_time_seconds": [
+            {
+                "type": "gauge",
+                "help": "Start time of the process since unix epoch in seconds.",
+                "unit": ""
+            }
+        ],
+        "process_virtual_memory_bytes": [
+            {
+                "type": "gauge",
+                "help": "Virtual memory size in bytes.",
+                "unit": ""
+            }
+        ],
+        "process_virtual_memory_max_bytes": [
+            {
+                "type": "gauge",
+                "help": "Maximum amount of virtual memory available in bytes.",
+                "unit": ""
+            }
+        ],
+        "prometheus_api_remote_read_queries": [
+            {
+                "type": "gauge",
+                "help": "The current number of remote read queries being executed or waiting.",
+                "unit": ""
+            }
+        ],
+        "prometheus_build_info": [
+            {
+                "type": "gauge",
+                "help": "A metric with a constant '1' value labeled by version, revision, branch, and goversion from which prometheus was built.",
+                "unit": ""
+            }
+        ],
+        "prometheus_config_last_reload_success_timestamp_seconds": [
+            {
+                "type": "gauge",
+                "help": "Timestamp of the last successful configuration reload.",
+                "unit": ""
+            }
+        ],
+        "prometheus_config_last_reload_successful": [
+            {
+                "type": "gauge",
+                "help": "Whether the last configuration reload attempt was successful.",
+                "unit": ""
+            }
+        ],
+        "prometheus_engine_queries": [
+            {
+                "type": "gauge",
+                "help": "The current number of queries being executed or waiting.",
+                "unit": ""
+            }
+        ],
+        "prometheus_engine_queries_concurrent_max": [
+            {
+                "type": "gauge",
+                "help": "The max number of concurrent queries.",
+                "unit": ""
+            }
+        ],
+        "prometheus_engine_query_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "Query timings",
+                "unit": ""
+            }
+        ],
+        "prometheus_engine_query_log_enabled": [
+            {
+                "type": "gauge",
+                "help": "State of the query log.",
+                "unit": ""
+            }
+        ],
+        "prometheus_engine_query_log_failures_total": [
+            {
+                "type": "counter",
+                "help": "The number of query log failures.",
+                "unit": ""
+            }
+        ],
+        "prometheus_http_request_duration_seconds": [
+            {
+                "type": "histogram",
+                "help": "Histogram of latencies for HTTP requests.",
+                "unit": ""
+            }
+        ],
+        "prometheus_http_requests_total": [
+            {
+                "type": "counter",
+                "help": "Counter of HTTP requests.",
+                "unit": ""
+            }
+        ],
+        "prometheus_http_response_size_bytes": [
+            {
+                "type": "histogram",
+                "help": "Histogram of response size for HTTP requests.",
+                "unit": ""
+            }
+        ],
+        "prometheus_notifications_alertmanagers_discovered": [
+            {
+                "type": "gauge",
+                "help": "The number of alertmanagers discovered and active.",
+                "unit": ""
+            }
+        ],
+        "prometheus_notifications_dropped_total": [
+            {
+                "type": "counter",
+                "help": "Total number of alerts dropped due to errors when sending to Alertmanager.",
+                "unit": ""
+            }
+        ],
+        "prometheus_notifications_queue_capacity": [
+            {
+                "type": "gauge",
+                "help": "The capacity of the alert notifications queue.",
+                "unit": ""
+            }
+        ],
+        "prometheus_notifications_queue_length": [
+            {
+                "type": "gauge",
+                "help": "The number of alert notifications in the queue.",
+                "unit": ""
+            }
+        ],
+        "prometheus_remote_storage_exemplars_in_total": [
+            {
+                "type": "counter",
+                "help": "Exemplars in to remote storage, compare to exemplars out for queue managers.",
+                "unit": ""
+            }
+        ],
+        "prometheus_remote_storage_highest_timestamp_in_seconds": [
+            {
+                "type": "gauge",
+                "help": "Highest timestamp that has come into the remote storage via the Appender interface, in seconds since epoch.",
+                "unit": ""
+            }
+        ],
+        "prometheus_remote_storage_samples_in_total": [
+            {
+                "type": "counter",
+                "help": "Samples in to remote storage, compare to samples out for queue managers.",
+                "unit": ""
+            }
+        ],
+        "prometheus_remote_storage_string_interner_zero_reference_releases_total": [
+            {
+                "type": "counter",
+                "help": "The number of times release has been called for strings that are not interned.",
+                "unit": ""
+            }
+        ],
+        "prometheus_rule_evaluation_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "The duration for a rule to execute.",
+                "unit": ""
+            }
+        ],
+        "prometheus_rule_group_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "The duration of rule group evaluations.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_consul_rpc_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "The duration of a Consul RPC call in seconds.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_consul_rpc_failures_total": [
+            {
+                "type": "counter",
+                "help": "The number of Consul RPC call failures.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_discovered_targets": [
+            {
+                "type": "gauge",
+                "help": "Current number of discovered targets.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_dns_lookup_failures_total": [
+            {
+                "type": "counter",
+                "help": "The number of DNS-SD lookup failures.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_dns_lookups_total": [
+            {
+                "type": "counter",
+                "help": "The number of DNS-SD lookups.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_failed_configs": [
+            {
+                "type": "gauge",
+                "help": "Current number of service discovery configurations that failed to load.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_file_read_errors_total": [
+            {
+                "type": "counter",
+                "help": "The number of File-SD read errors.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_file_scan_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "The duration of the File-SD scan in seconds.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_kubernetes_events_total": [
+            {
+                "type": "counter",
+                "help": "The number of Kubernetes events handled.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_kuma_fetch_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "The duration of a Kuma MADS fetch call.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_kuma_fetch_failures_total": [
+            {
+                "type": "counter",
+                "help": "The number of Kuma MADS fetch call failures.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_kuma_fetch_skipped_updates_total": [
+            {
+                "type": "counter",
+                "help": "The number of Kuma MADS fetch calls that result in no updates to the targets.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_received_updates_total": [
+            {
+                "type": "counter",
+                "help": "Total number of update events received from the SD providers.",
+                "unit": ""
+            }
+        ],
+        "prometheus_sd_updates_total": [
+            {
+                "type": "counter",
+                "help": "Total number of update events sent to the SD consumers.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_interval_length_seconds": [
+            {
+                "type": "summary",
+                "help": "Actual intervals between scrapes.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_metadata_cache_bytes": [
+            {
+                "type": "gauge",
+                "help": "The number of bytes that are currently used for storing metric metadata in the cache",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_metadata_cache_entries": [
+            {
+                "type": "gauge",
+                "help": "Total number of metric metadata entries in the cache",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrape_pool_exceeded_label_limits_total": [
+            {
+                "type": "counter",
+                "help": "Total number of times scrape pools hit the label limits, during sync or config reload.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrape_pool_exceeded_target_limit_total": [
+            {
+                "type": "counter",
+                "help": "Total number of times scrape pools hit the target limit, during sync or config reload.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrape_pool_reloads_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of failed scrape pool reloads.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrape_pool_reloads_total": [
+            {
+                "type": "counter",
+                "help": "Total number of scrape pool reloads.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrape_pool_sync_total": [
+            {
+                "type": "counter",
+                "help": "Total number of syncs that were executed on a scrape pool.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrape_pool_targets": [
+            {
+                "type": "gauge",
+                "help": "Current number of targets in this scrape pool.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrape_pools_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of scrape pool creations that failed.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrape_pools_total": [
+            {
+                "type": "counter",
+                "help": "Total number of scrape pool creation attempts.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrapes_cache_flush_forced_total": [
+            {
+                "type": "counter",
+                "help": "How many times a scrape cache was flushed due to getting big while scrapes are failing.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrapes_exceeded_body_size_limit_total": [
+            {
+                "type": "counter",
+                "help": "Total number of scrapes that hit the body size limit",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrapes_exceeded_sample_limit_total": [
+            {
+                "type": "counter",
+                "help": "Total number of scrapes that hit the sample limit and were rejected.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrapes_exemplar_out_of_order_total": [
+            {
+                "type": "counter",
+                "help": "Total number of exemplar rejected due to not being out of the expected order.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrapes_sample_duplicate_timestamp_total": [
+            {
+                "type": "counter",
+                "help": "Total number of samples rejected due to duplicate timestamps but different values.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrapes_sample_out_of_bounds_total": [
+            {
+                "type": "counter",
+                "help": "Total number of samples rejected due to timestamp falling outside of the time bounds.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_scrapes_sample_out_of_order_total": [
+            {
+                "type": "counter",
+                "help": "Total number of samples rejected due to not being out of the expected order.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_sync_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of target sync failures.",
+                "unit": ""
+            }
+        ],
+        "prometheus_target_sync_length_seconds": [
+            {
+                "type": "summary",
+                "help": "Actual interval to sync the scrape pool.",
+                "unit": ""
+            }
+        ],
+        "prometheus_template_text_expansion_failures_total": [
+            {
+                "type": "counter",
+                "help": "The total number of template text expansion failures.",
+                "unit": ""
+            }
+        ],
+        "prometheus_template_text_expansions_total": [
+            {
+                "type": "counter",
+                "help": "The total number of template text expansions.",
+                "unit": ""
+            }
+        ],
+        "prometheus_treecache_watcher_goroutines": [
+            {
+                "type": "gauge",
+                "help": "The current number of watcher goroutines.",
+                "unit": ""
+            }
+        ],
+        "prometheus_treecache_zookeeper_failures_total": [
+            {
+                "type": "counter",
+                "help": "The total number of ZooKeeper failures.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_blocks_loaded": [
+            {
+                "type": "gauge",
+                "help": "Number of currently loaded data blocks",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_checkpoint_creations_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of checkpoint creations that failed.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_checkpoint_creations_total": [
+            {
+                "type": "counter",
+                "help": "Total number of checkpoint creations attempted.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_checkpoint_deletions_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of checkpoint deletions that failed.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_checkpoint_deletions_total": [
+            {
+                "type": "counter",
+                "help": "Total number of checkpoint deletions attempted.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_clean_start": [
+            {
+                "type": "gauge",
+                "help": "-1: lockfile is disabled. 0: a lockfile from a previous execution was replaced. 1: lockfile creation was clean",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_compaction_chunk_range_seconds": [
+            {
+                "type": "histogram",
+                "help": "Final time range of chunks on their first compaction",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_compaction_chunk_samples": [
+            {
+                "type": "histogram",
+                "help": "Final number of samples on their first compaction",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_compaction_chunk_size_bytes": [
+            {
+                "type": "histogram",
+                "help": "Final size of chunks on their first compaction",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_compaction_duration_seconds": [
+            {
+                "type": "histogram",
+                "help": "Duration of compaction runs",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_compaction_populating_block": [
+            {
+                "type": "gauge",
+                "help": "Set to 1 when a block is currently being written to the disk.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_compactions_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of compactions that failed for the partition.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_compactions_skipped_total": [
+            {
+                "type": "counter",
+                "help": "Total number of skipped compactions due to disabled auto compaction.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_compactions_total": [
+            {
+                "type": "counter",
+                "help": "Total number of compactions that were executed for the partition.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_compactions_triggered_total": [
+            {
+                "type": "counter",
+                "help": "Total number of triggered compactions for the partition.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_data_replay_duration_seconds": [
+            {
+                "type": "gauge",
+                "help": "Time taken to replay the data on disk.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_exemplar_exemplars_appended_total": [
+            {
+                "type": "counter",
+                "help": "Total number of appended exemplars.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_exemplar_exemplars_in_storage": [
+            {
+                "type": "gauge",
+                "help": "Number of exemplars currently in circular storage.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_exemplar_last_exemplars_timestamp_seconds": [
+            {
+                "type": "gauge",
+                "help": "The timestamp of the oldest exemplar stored in circular storage. Useful to check for what timerange the current exemplar buffer limit allows. This usually means the last timestampfor all exemplars for a typical setup. This is not true though if one of the series timestamp is in future compared to rest series.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_exemplar_max_exemplars": [
+            {
+                "type": "gauge",
+                "help": "Total number of exemplars the exemplar storage can store, resizeable.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_exemplar_out_of_order_exemplars_total": [
+            {
+                "type": "counter",
+                "help": "Total number of out of order exemplar ingestion failed attempts.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_exemplar_series_with_exemplars_in_storage": [
+            {
+                "type": "gauge",
+                "help": "Number of series with exemplars currently in circular storage.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_active_appenders": [
+            {
+                "type": "gauge",
+                "help": "Number of currently active appender transactions",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_chunks": [
+            {
+                "type": "gauge",
+                "help": "Total number of chunks in the head block.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_chunks_created_total": [
+            {
+                "type": "counter",
+                "help": "Total number of chunks created in the head",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_chunks_removed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of chunks removed in the head",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_gc_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "Runtime of garbage collection in the head block.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_max_time": [
+            {
+                "type": "gauge",
+                "help": "Maximum timestamp of the head block. The unit is decided by the library consumer.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_max_time_seconds": [
+            {
+                "type": "gauge",
+                "help": "Maximum timestamp of the head block.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_min_time": [
+            {
+                "type": "gauge",
+                "help": "Minimum time bound of the head block. The unit is decided by the library consumer.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_min_time_seconds": [
+            {
+                "type": "gauge",
+                "help": "Minimum time bound of the head block.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_samples_appended_total": [
+            {
+                "type": "counter",
+                "help": "Total number of appended samples.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_series": [
+            {
+                "type": "gauge",
+                "help": "Total number of series in the head block.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_series_created_total": [
+            {
+                "type": "counter",
+                "help": "Total number of series created in the head",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_series_not_found_total": [
+            {
+                "type": "counter",
+                "help": "Total number of requests for series that were not found.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_series_removed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of series removed in the head",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_truncations_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of head truncations that failed.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_head_truncations_total": [
+            {
+                "type": "counter",
+                "help": "Total number of head truncations attempted.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_isolation_high_watermark": [
+            {
+                "type": "gauge",
+                "help": "The highest TSDB append ID that has been given out.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_isolation_low_watermark": [
+            {
+                "type": "gauge",
+                "help": "The lowest TSDB append ID that is still referenced.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_lowest_timestamp": [
+            {
+                "type": "gauge",
+                "help": "Lowest timestamp value stored in the database. The unit is decided by the library consumer.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_lowest_timestamp_seconds": [
+            {
+                "type": "gauge",
+                "help": "Lowest timestamp value stored in the database.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_mmap_chunk_corruptions_total": [
+            {
+                "type": "counter",
+                "help": "Total number of memory-mapped chunk corruptions.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_out_of_bound_samples_total": [
+            {
+                "type": "counter",
+                "help": "Total number of out of bound samples ingestion failed attempts.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_out_of_order_samples_total": [
+            {
+                "type": "counter",
+                "help": "Total number of out of order samples ingestion failed attempts.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_reloads_failures_total": [
+            {
+                "type": "counter",
+                "help": "Number of times the database failed to reloadBlocks block data from disk.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_reloads_total": [
+            {
+                "type": "counter",
+                "help": "Number of times the database reloaded block data from disk.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_retention_limit_bytes": [
+            {
+                "type": "gauge",
+                "help": "Max number of bytes to be retained in the tsdb blocks, configured 0 means disabled",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_size_retentions_total": [
+            {
+                "type": "counter",
+                "help": "The number of times that blocks were deleted because the maximum number of bytes was exceeded.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_snapshot_replay_error_total": [
+            {
+                "type": "counter",
+                "help": "Total number snapshot replays that failed.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_storage_blocks_bytes": [
+            {
+                "type": "gauge",
+                "help": "The number of bytes that are currently used for local storage by all blocks.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_symbol_table_size_bytes": [
+            {
+                "type": "gauge",
+                "help": "Size of symbol table in memory for loaded blocks",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_time_retentions_total": [
+            {
+                "type": "counter",
+                "help": "The number of times that blocks were deleted because the maximum time limit was exceeded.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_tombstone_cleanup_seconds": [
+            {
+                "type": "histogram",
+                "help": "The time taken to recompact blocks to remove tombstones.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_vertical_compactions_total": [
+            {
+                "type": "counter",
+                "help": "Total number of compactions done on overlapping blocks.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_wal_completed_pages_total": [
+            {
+                "type": "counter",
+                "help": "Total number of completed pages.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_wal_corruptions_total": [
+            {
+                "type": "counter",
+                "help": "Total number of WAL corruptions.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_wal_fsync_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "Duration of WAL fsync.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_wal_page_flushes_total": [
+            {
+                "type": "counter",
+                "help": "Total number of page flushes.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_wal_segment_current": [
+            {
+                "type": "gauge",
+                "help": "WAL segment index that TSDB is currently writing to.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_wal_truncate_duration_seconds": [
+            {
+                "type": "summary",
+                "help": "Duration of WAL truncation.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_wal_truncations_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of WAL truncations that failed.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_wal_truncations_total": [
+            {
+                "type": "counter",
+                "help": "Total number of WAL truncations attempted.",
+                "unit": ""
+            }
+        ],
+        "prometheus_tsdb_wal_writes_failed_total": [
+            {
+                "type": "counter",
+                "help": "Total number of WAL writes that failed.",
+                "unit": ""
+            }
+        ],
+        "prometheus_web_federation_errors_total": [
+            {
+                "type": "counter",
+                "help": "Total number of errors that occurred while sending federation responses.",
+                "unit": ""
+            }
+        ],
+        "prometheus_web_federation_warnings_total": [
+            {
+                "type": "counter",
+                "help": "Total number of warnings that occurred while sending federation responses.",
+                "unit": ""
+            }
+        ],
+        "promhttp_metric_handler_errors_total": [
+            {
+                "type": "counter",
+                "help": "Total number of internal errors encountered by the promhttp metric handler.",
+                "unit": ""
+            }
+        ],
+        "promhttp_metric_handler_requests_in_flight": [
+            {
+                "type": "gauge",
+                "help": "Current number of scrapes being served.",
+                "unit": ""
+            }
+        ],
+        "promhttp_metric_handler_requests_total": [
+            {
+                "type": "counter",
+                "help": "Total number of scrapes by HTTP status code.",
+                "unit": ""
+            }
+        ]
+    }
+}

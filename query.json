@@ -1,0 +1,1029 @@
+{
+    "status": "success",
+    "data": {
+        "resultType": "vector",
+        "result": [
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "+Inf",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "0.01",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "0.1",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "0.5",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "1",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "10",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "2.5",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "5",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "50",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_count",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_duration_seconds_sum",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "0.000007689"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "+Inf",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "1",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "100",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "1000",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "10000",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "500",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "5000",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_size_bytes_count",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_request_size_bytes_sum",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_requests_total",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_response_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "+Inf",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_response_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "1",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_response_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "100",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_response_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "1000",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_response_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "10000",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_response_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "500",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_response_size_bytes_bucket",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "le": "5000",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_response_size_bytes_count",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "4"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "example_app_http_response_size_bytes_sum",
+                    "host_name": "localhost:3333",
+                    "http_method": "GET",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "request_path": "/hello",
+                    "status_code": "200"
+                },
+                "value": [
+                    1684735712.333,
+                    "52"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_gc_duration_seconds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "quantile": "0"
+                },
+                "value": [
+                    1684735712.333,
+                    "0.000023068"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_gc_duration_seconds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "quantile": "0.25"
+                },
+                "value": [
+                    1684735712.333,
+                    "0.000023068"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_gc_duration_seconds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "quantile": "0.5"
+                },
+                "value": [
+                    1684735712.333,
+                    "0.000023068"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_gc_duration_seconds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "quantile": "0.75"
+                },
+                "value": [
+                    1684735712.333,
+                    "0.000023068"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_gc_duration_seconds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "quantile": "1"
+                },
+                "value": [
+                    1684735712.333,
+                    "0.000023068"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_gc_duration_seconds_count",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_gc_duration_seconds_sum",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "0.000023068"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_goroutines",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "11"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_info",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics",
+                    "version": "go1.20.4"
+                },
+                "value": [
+                    1684735712.333,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_alloc_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "2412296"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_alloc_bytes_total",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "3119472"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_buck_hash_sys_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "4559"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_frees_total",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "3644"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_gc_sys_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "7341824"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_heap_alloc_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "2412296"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_heap_idle_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "3596288"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_heap_inuse_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "4038656"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_heap_objects",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "2863"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_heap_released_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "2711552"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_heap_sys_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "7634944"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_last_gc_time_seconds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "1684735688.2273867"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_lookups_total",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_mallocs_total",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "6507"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_mcache_inuse_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "9600"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_mcache_sys_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "15600"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_mspan_inuse_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "85600"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_mspan_sys_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "97920"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_next_gc_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "5081400"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_other_sys_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "862161"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_stack_inuse_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "753664"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_stack_sys_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "753664"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_memstats_sys_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "16710672"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_threads",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "11"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "process_cpu_seconds_total",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "process_max_fds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "1048576"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "process_open_fds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "11"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "process_resident_memory_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "14008320"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "process_start_time_seconds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "1684735658.91"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "process_virtual_memory_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "1419870208"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "process_virtual_memory_max_bytes",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "18446744073709552000"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "promhttp_metric_handler_requests_in_flight",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "promhttp_metric_handler_requests_total",
+                    "code": "200",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "2"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "promhttp_metric_handler_requests_total",
+                    "code": "500",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "promhttp_metric_handler_requests_total",
+                    "code": "503",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "scrape_duration_seconds",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "0.00116101"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "scrape_samples_post_metric_relabeling",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "74"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "scrape_samples_scraped",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "74"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "scrape_series_added",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "30"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "up",
+                    "instance": "localhost:8000",
+                    "job": "demo-app-metrics"
+                },
+                "value": [
+                    1684735712.333,
+                    "1"
+                ]
+            }
+        ]
+    }
+}

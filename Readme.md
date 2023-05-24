@@ -18,3 +18,24 @@ To install Your Library Name, use the following command:
 ```shell
 go get -u github.com/milind12/metrics_exporter
 ```
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1 . Import the package into your Go code:
+
+```
+import "github.com/milind12/metrics_exporter"
+```
+
+2.  Following code example demonstrates selectively exposing metrics which have label `job` with value `demo-app-metrics`
+
+```
+    promInstance, err := NewPrometheusInstance("localhost", "9090", map[string]string{"job": "demo-app-metrics"})
+	if err != nil {
+		t.Errorf("failed")
+	}
+	exportedMetrics:= promInstance.ExportMetrics()
+	fmt.Println(exportedMetrics)
+```

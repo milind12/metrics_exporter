@@ -55,9 +55,7 @@ type PrometheusMetadataAPIResponse struct {
 	} `json:"data"`
 }
 
-func makeHTTPRequest(host, port, path string, queryParams map[string]string, wg *sync.WaitGroup) *HTTPResponse {
-	defer wg.Done()
-
+func makeHTTPRequest(host, port, path string, queryParams map[string]string) *HTTPResponse {
 	url := &url.URL{
 		Scheme: "http",
 		Host:   fmt.Sprintf("%s:%s", host, port),
@@ -94,24 +92,22 @@ func filtersToString(filters map[string]string) string {
 
 func (p *Prometheus) ExportMetrics() string {
 	var wg sync.WaitGroup
-	var queryAPIResponse *HTTPResponse = nil
-	var metadataAPIResponse *HTTPResponse = nil
+	var queryAPIResponse *HTTPResponse
+	var metadataAPIResponse *HTTPResponse
 	var prometheusQueryAPIResponse PrometheusQueryAPIResponse
 	var prometheusMetadataAPIResponse PrometheusMetadataAPIResponse
 	wg.Add(2)
 	go func(qAPIResp *HTTPResponse) {
 		defer wg.Done()
-		queryAPIResponse = makeHTTPRequest(p.Host, p.Port, "/api/v1/query", map[string]string{"query": filtersToString(p.Filters)}, &wg)
+		queryAPIResponse = makeHTTPRequest(p.Host, p.Port, "/api/v1/query", map[string]string{"query": filtersToString(p.Filters)})
 	}(queryAPIResponse)
 
 	go func(mAPIResponse *HTTPResponse) {
 		defer wg.Done()
-		metadataAPIResponse = makeHTTPRequest(p.Host, p.Port, "/api/v1/metadata", map[string]string{}, &wg)
+		metadataAPIResponse = makeHTTPRequest(p.Host, p.Port, "/api/v1/metadata", map[string]string{})
 	}(metadataAPIResponse)
 
 	wg.Wait()
-	defer queryAPIResponse.Response.Body.Close()
-	defer metadataAPIResponse.Response.Body.Close()
 	if queryAPIResponse.Error != nil {
 		fmt.Println("Error:", queryAPIResponse.Error)
 		return ""
@@ -120,6 +116,8 @@ func (p *Prometheus) ExportMetrics() string {
 		fmt.Println("Error:", metadataAPIResponse.Error)
 		return ""
 	}
+	defer queryAPIResponse.Response.Body.Close()
+	defer metadataAPIResponse.Response.Body.Close()
 	body, err := ioutil.ReadAll(queryAPIResponse.Response.Body)
 	if err != nil {
 		fmt.Println("Error reading query API response body:", err)
@@ -140,6 +138,5 @@ func (p *Prometheus) ExportMetrics() string {
 		fmt.Println("Error decoding JSON received from qeury API:", err)
 		return ""
 	}
-
 	return exportMetrics(prometheusQueryAPIResponse, prometheusMetadataAPIResponse)
 }

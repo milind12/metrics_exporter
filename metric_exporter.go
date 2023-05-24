@@ -4,17 +4,6 @@ import (
 	"strings"
 )
 
-type PrometheusQueryAPIResponse struct {
-	Status string `json:"status"`
-	Data   struct {
-		ResultType string `json:"resultType"`
-		Result     []struct {
-			Metric map[string]string `json:"metric"`
-			Value  []interface{}     `json:"value"`
-		} `json:"result"`
-	} `json:"data"`
-}
-
 type Metadata []struct {
 	Type string `json:"type"`
 	Help string `json:"help"`
@@ -23,15 +12,6 @@ type Metadata []struct {
 
 type MetricsOrder struct {
 	mo []string
-}
-
-type PrometheusMetadataAPIResponse struct {
-	Status string `json:"status"`
-	Data   map[string][]struct {
-		Type string `json:"type"`
-		Help string `json:"help"`
-		Unit string `json:"unit"`
-	} `json:"data"`
 }
 
 type IMetric interface {
@@ -61,35 +41,35 @@ func initMetric(Name string, Help string, Type string) IMetric {
 	return NewSummaryMetrics(Name, Help, Type)
 }
 
-func getMetric(mm MetricsMap, mn string, mtd Metadata, metricsorder *MetricsOrder) IMetric {
-	metric, ok := mm[mn]
+func getMetric(metricmap MetricsMap, metricname string, mtd Metadata, metricsorder *MetricsOrder) IMetric {
+	metric, ok := metricmap[metricname]
 	if !ok {
-		mm[mn] = initMetric(mn, mtd[0].Help, mtd[0].Type)
-		metricsorder.mo = append(metricsorder.mo, mn)
-		return mm[mn]
+		metricmap[metricname] = initMetric(metricname, mtd[0].Help, mtd[0].Type)
+		metricsorder.mo = append(metricsorder.mo, metricname)
+		return metricmap[metricname]
 	}
 	return metric
 }
 
-func ExportMetrics(promQueryResponse PrometheusQueryAPIResponse, promMetadataResponse PrometheusMetadataAPIResponse) string {
-	mm := MetricsMap{}
+func exportMetrics(promQueryResponse PrometheusQueryAPIResponse, promMetadataResponse PrometheusMetadataAPIResponse) string {
+	metricmap := MetricsMap{}
 	metricsorder := MetricsOrder{mo: []string{}}
 	var builder strings.Builder
 	for _, result := range promQueryResponse.Data.Result {
-		mn := result.Metric["__name__"]
-		metadata, ok := promMetadataResponse.Data[mn]
+		metricname := result.Metric["__name__"]
+		metadata, ok := promMetadataResponse.Data[metricname]
 		if !ok {
-			mn = getPossibleMetricName(mn)
-			metadata, ok = promMetadataResponse.Data[mn]
+			metricname = getPossibleMetricName(metricname)
+			metadata, ok = promMetadataResponse.Data[metricname]
 		}
 		if ok {
-			metric := getMetric(mm, mn, metadata, &metricsorder)
+			metric := getMetric(metricmap, metricname, metadata, &metricsorder)
 			metric.ParseMetricMap(result.Metric, result.Value[1].(string))
 		}
 	}
 
-	for _, mn := range metricsorder.mo {
-		builder.WriteString(mm[mn].Print())
+	for _, metricname := range metricsorder.mo {
+		builder.WriteString(metricmap[metricname].Print())
 		builder.WriteString("\n")
 	}
 

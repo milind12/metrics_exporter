@@ -26,7 +26,7 @@ func TestMetricsExporter(t *testing.T) {
 	json.Unmarshal(queryResponse, &prometheusQueryAPIResponse)
 	var prometheusMetadataAPIResponse PrometheusMetadataAPIResponse
 	json.Unmarshal(metadataResponse, &prometheusMetadataAPIResponse)
-	exportedMetrics := ExportMetrics(prometheusQueryAPIResponse, prometheusMetadataAPIResponse)
+	exportedMetrics := exportMetrics(prometheusQueryAPIResponse, prometheusMetadataAPIResponse)
 	fmt.Println(exportedMetrics)
 	reader := strings.NewReader(exportedMetrics)
 	parser := expfmt.TextParser{}

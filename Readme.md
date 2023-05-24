@@ -32,7 +32,7 @@ import "github.com/milind12/metrics_exporter"
 2.  Following code example demonstrates selectively exposing metrics which have label `job` with value `demo-app-metrics`
 
 ```
-promInstance, err := NewPrometheusInstance("localhost", "9090", map[string]string{"job": "demo-app-metrics"})
+promExporterInstance, err := NewPrometheusExporterInstance("<PrometheusHost>", "<PrometheusPort>", map[string]string{"job": "demo-app-metrics"})
 if err != nil {
     t.Errorf("failed")
 }

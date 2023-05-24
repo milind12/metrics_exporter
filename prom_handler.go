@@ -16,7 +16,7 @@ type HTTPResponse struct {
 	Error    error
 }
 
-type Prometheus struct {
+type PrometheusExporter struct {
 	Host    string
 	Port    string
 	Filters map[string]string
@@ -74,12 +74,12 @@ func makeHTTPRequest(host, port, path string, queryParams map[string]string) *HT
 	return &HTTPResponse{Response: response, Error: err}
 }
 
-func NewPrometheusInstance(Host string, Port string, Filters map[string]string) (*Prometheus, error) {
+func NewPrometheusExporterInstance(Host string, Port string, Filters map[string]string) (*PrometheusExporter, error) {
 	err := checkFiltersMapNotEmpty(Filters)
 	if err != nil {
 		return nil, err
 	}
-	return &Prometheus{Host: Host, Port: Port, Filters: Filters}, nil
+	return &PrometheusExporter{Host: Host, Port: Port, Filters: Filters}, nil
 }
 
 func filtersToString(filters map[string]string) string {
@@ -90,7 +90,7 @@ func filtersToString(filters map[string]string) string {
 	return "{" + strings.Join(filterStrings, ", ") + "}"
 }
 
-func (p *Prometheus) ExportMetrics() string {
+func (p *PrometheusExporter) ExportMetrics() string {
 	var wg sync.WaitGroup
 	var queryAPIResponse *HTTPResponse
 	var metadataAPIResponse *HTTPResponse

@@ -17,9 +17,10 @@ type HTTPResponse struct {
 }
 
 type PrometheusExporter struct {
-	Host    string
-	Port    string
-	Filters map[string]string
+	RequestScheme string
+	Host          string
+	Port          string
+	Filters       []map[string]string
 }
 
 type EmptyFiltersError struct{}
@@ -55,9 +56,9 @@ type PrometheusMetadataAPIResponse struct {
 	} `json:"data"`
 }
 
-func makeHTTPRequest(host, port, path string, queryParams map[string]string) *HTTPResponse {
+func makeHTTPRequest(RequestScheme, host, port, path string, queryParams map[string]string) *HTTPResponse {
 	url := &url.URL{
-		Scheme: "http",
+		Scheme: RequestScheme,
 		Host:   fmt.Sprintf("%s:%s", host, port),
 		Path:   path,
 	}
@@ -74,20 +75,26 @@ func makeHTTPRequest(host, port, path string, queryParams map[string]string) *HT
 	return &HTTPResponse{Response: response, Error: err}
 }
 
-func NewPrometheusExporterInstance(Host string, Port string, Filters map[string]string) (*PrometheusExporter, error) {
-	err := checkFiltersMapNotEmpty(Filters)
-	if err != nil {
-		return nil, err
+func NewPrometheusExporterInstance(RequestScheme string, Host string, Port string, Filters []map[string]string) (*PrometheusExporter, error) {
+	for _, filter := range Filters {
+		err := checkFiltersMapNotEmpty(filter)
+		if err != nil {
+			return nil, err
+		}
 	}
-	return &PrometheusExporter{Host: Host, Port: Port, Filters: Filters}, nil
+	return &PrometheusExporter{RequestScheme: RequestScheme, Host: Host, Port: Port, Filters: Filters}, nil
 }
 
-func filtersToString(filters map[string]string) string {
-	var filterStrings []string
-	for key, value := range filters {
-		filterStrings = append(filterStrings, fmt.Sprintf("%s='%s'", key, value))
+func filtersToString(filters []map[string]string) string {
+	OrFilters := []string{}
+	for _, filter := range filters {
+		var AndFilters []string
+		for key, value := range filter {
+			AndFilters = append(AndFilters, fmt.Sprintf("%s='%s'", key, value))
+		}
+		OrFilters = append(OrFilters, "{"+strings.Join(AndFilters, ", ")+"}")
 	}
-	return "{" + strings.Join(filterStrings, ", ") + "}"
+	return "(" + strings.Join(OrFilters, " OR ") + ")"
 }
 
 func (p *PrometheusExporter) ExportMetrics() string {
@@ -99,12 +106,12 @@ func (p *PrometheusExporter) ExportMetrics() string {
 	wg.Add(2)
 	go func(qAPIResp *HTTPResponse) {
 		defer wg.Done()
-		queryAPIResponse = makeHTTPRequest(p.Host, p.Port, "/api/v1/query", map[string]string{"query": filtersToString(p.Filters)})
+		queryAPIResponse = makeHTTPRequest(p.RequestScheme, p.Host, p.Port, "/api/v1/query", map[string]string{"query": filtersToString(p.Filters)})
 	}(queryAPIResponse)
 
 	go func(mAPIResponse *HTTPResponse) {
 		defer wg.Done()
-		metadataAPIResponse = makeHTTPRequest(p.Host, p.Port, "/api/v1/metadata", map[string]string{})
+		metadataAPIResponse = makeHTTPRequest(p.RequestScheme, p.Host, p.Port, "/api/v1/metadata", map[string]string{})
 	}(metadataAPIResponse)
 
 	wg.Wait()

@@ -13,7 +13,7 @@ Metrics Exporter is a Go library that provides functionality to interact with Pr
 
 ## Installation
 
-To install Your Library Name, use the following command:
+To install metrics_exporter, use the following command:
 
 ```shell
 go get -u github.com/milind12/metrics_exporter

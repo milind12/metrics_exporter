@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: metrics-exporter
+  description: Metrics Exporter - A GitHub repository
+  annotations:
+    github.com/project-slug: milind12/metrics_exporter
+spec:
+  type: service
+  lifecycle: experimental
+  owner: milind12
+  system: default

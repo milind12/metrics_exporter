@@ -6,6 +6,7 @@ metadata:
   annotations:
     github.com/project-slug: milind12/metrics_exporter
     backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: civo
 spec:
   type: service
   lifecycle: experimental
